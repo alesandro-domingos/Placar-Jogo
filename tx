@@ -1,0 +1,20 @@
+        /*Configuração para centralizar um  elemento filho dentro de um elemento pai*/
+       /*porem todos os elementos filhos ficaram exatamente um abaixo do outro*/
+        /*somente alterando a porcentagem do transform para poder aparecer*/
+        #ele-pai-vertical{
+            background-color: yellow;
+            width: 300px;
+            height: 400px;
+            position: relative;
+           
+            
+        }
+        #ele-filho-vertical{
+            background-color: turquoise;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }

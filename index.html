@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar do jogo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body onload()>
+    <header>
+        <h1>
+            PLACAR DO JOGO
+        </h1>
+    </header>    
+    <main>
+        <div id="vermelho1"></div>
+        <div id="vermelho2"></div>
+        <section>
+            <article id="primeiro-placar">
+                <div id="time1" class="texto">
+                    <span id="nometime1">VAS</span>
+                </div>
+                <div id="golstime1" class="texto">
+                      <span id="gol1">0</span>                     
+                </div>
+            </article>
+            <article id="segundo-placar">
+                <div id="time2" class="texto">
+                    <span id="nometime2">COR</span>
+                </div>
+                <div id="golstime2" class="texto">
+                    <span id="gol2">0</span>
+                </div>
+            </article>
+            <article id="tempo-total" class="texto">            
+                <div id="tempo">
+                    <span>1º</span>
+                    <span id="contador-minuto">00</span><span>:</span><span id="contador-seg">00</span>
+                </div>
+                <div id="prorrogacao" class="texto">
+                    <span>+</span><span id="contadoracrescimo">0</span>
+                </div>
+            </article>
+        </section>
+        <div id="botoes-tempo">
+            <input type="button" id="btn-inicio" value="Inicar Jogo" onclick="iniciarjogo()">
+            <input type="button" value="Gol - Time 1" id="btn-gol1" onclick="fezgol1()">
+            <input type="button" value="Gol - Time 2" id="btn-gol2" onclick="fezgol2()">                
+            <input type="button" id="btn-acrescimo" value="Acréscimo Tempo" onclick="addacrescimo()">             
+            <input type="button" value="Cartão Vermelho Time 1" id="btn-vermelho1" onclick="vermelho1()">
+            <input type="button" value="Cartão Vermelho Time 2" id="btn-vermelho2" onclick="vermelho2()">
+        </div>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+</html>
